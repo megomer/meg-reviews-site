@@ -10,9 +10,14 @@
     body {
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
-      padding: 20px;
+      padding: 0px;
       background: #d5d5d5;
       line-height: 1.5;
+    }
+
+    html,
+    body {
+      margin: 0px;
     }
 
     .header {
@@ -22,13 +27,15 @@
       font-size: 40px;
       text-align: center;
       background-image: url("mountains.jpg");
+      margin: 0px;
     }
 
     .leftcolumn {
       float: left;
-      width: 75%;
+      width: 72%;
       margin-right: 5%;
       color: #6d7993;
+      margin-left: 3%;
     }
 
     .rightcolumn {
@@ -39,7 +46,7 @@
 
     .button a {
       font-family: Ostrich Sans;
-      font-size: 30px;
+      font-size: 20px;
       background-color: #96858f;
       color: white;
       padding-top: 20px;
@@ -48,6 +55,7 @@
       cursor: pointer;
       float: left;
       text-decoration: none;
+      width: 100%;
     }
 
     img {
@@ -64,6 +72,28 @@
       color: white;
       text-align: center;
     }
+    /* Style the navbar */
+    #navbar {
+      overflow: hidden;
+      background-color: #333;
+
+      width: 100%;
+    }
+
+    /* Navbar links */
+    #navbar a {
+      font-family: Ostrich Sans;
+      font-size: 20px;
+      background-color: #96858f;
+      color: white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      cursor: pointer;
+      float: left;
+      text-decoration: none;
+      width: 25%;
+    }
   </style>
 
   <body>
@@ -71,39 +101,59 @@
       <h2>Meglan's Other Reviews</h2>
     </div>
 
-    <div class="button" style="width: 100%;">
-      <a href="index.html" style="width: 25%;">About Me</a>
-      <a href="movies.html" style="width: 25%;">Movie Reviews</a>
-      <a href="TV.html" style="width: 25%;">TV Reviews</a>
-      <a href="others.html" style="width: 25%;">Other Reviews</a>
+    <div id="navbar">
+      <a href="index.html">About Me</a>
+      <a href="movies.html">Movie Reviews</a>
+      <a href="TV.html">TV Reviews</a>
+      <a href="others.html">Other Reviews</a>
     </div>
 
-    <div class="row">
-      <div class="leftcolumn">
-        <div class="card">
-          <h2>Skyrim Special Edition(2012)</h2>
-          <h5>January 3, 2020</h5>
-          <img src="skyrim.jpg" alt="Skyrim Special Edition" />
-          <p>Review will be uploaded soon...</p>
+    <div class="content">
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>Skyrim Special Edition(2012)</h2>
+            <h5>January 3, 2020</h5>
+            <img src="skyrim.jpg" alt="Skyrim Special Edition" />
+            <p>Review will be uploaded soon...</p>
+          </div>
+          <div class="card">
+            <h2>Skyrim Special Edition(2012)</h2>
+            <h5>January 3, 2020</h5>
+            <img src="skyrim.jpg" alt="Skyrim Special Edition" />
+            <p>Review will be uploaded soon...</p>
+          </div>
+          <div class="card">
+            <h2>Skyrim Special Edition(2012)</h2>
+            <h5>January 3, 2020</h5>
+            <img src="skyrim.jpg" alt="Skyrim Special Edition" />
+            <p>Review will be uploaded soon...</p>
+          </div>
+          <div class="card">
+            <h2>Skyrim Special Edition(2012)</h2>
+            <h5>January 3, 2020</h5>
+            <img src="skyrim.jpg" alt="Skyrim Special Edition" />
+            <p>Review will be uploaded soon...</p>
+          </div>
         </div>
-      </div>
-      <div class="rightcolumn">
-        <div class="card">
-          <h2>About Me</h2>
-          <img
-            src="profile.jpg"
-            alt="Meglan O'Mera"
-            style="width: 200px; height: 200px;"
-          />
-          <p>
-            Hi! I'm Meglan. Star Wars, comic book, film, video game, and art
-            nerd. I watch a lot of TV and movies, so here's my thoughts on a few
-            of them. Enjoy!
-          </p>
-        </div>
-        <div class="card">
-          <h3>Follow Me</h3>
-          <p>Instagram: @meglanomera</p>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>About Me</h2>
+            <img
+              src="profile.jpg"
+              alt="Meglan O'Mera"
+              style="width: 200px; height: 200px;"
+            />
+            <p>
+              Hi! I'm Meglan. Star Wars, comic book, film, video game, and art
+              nerd. I watch a lot of TV and movies, so here's my thoughts on a
+              few of them. Enjoy!
+            </p>
+          </div>
+          <div class="card">
+            <h3>Follow Me</h3>
+            <p>Instagram: @meglanomera<br />Email: meglano03@gmail.com</p>
+          </div>
         </div>
       </div>
     </div>

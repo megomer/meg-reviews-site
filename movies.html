@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <title>Movie Reviews</title>
+  <title>Other Reviews</title>
   <style>
     @font-face {
       font-family: Ostrich Sans;
@@ -10,9 +10,14 @@
     body {
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
         sans-serif;
-      padding: 20px;
+      padding: 0px;
       background: #d5d5d5;
       line-height: 1.5;
+    }
+
+    html,
+    body {
+      margin: 0px;
     }
 
     .header {
@@ -22,13 +27,15 @@
       font-size: 40px;
       text-align: center;
       background-image: url("mountains.jpg");
+      margin: 0px;
     }
 
     .leftcolumn {
       float: left;
-      width: 75%;
+      width: 72%;
       margin-right: 5%;
       color: #6d7993;
+      margin-left: 3%;
     }
 
     .rightcolumn {
@@ -39,7 +46,7 @@
 
     .button a {
       font-family: Ostrich Sans;
-      font-size: 30px;
+      font-size: 20px;
       background-color: #96858f;
       color: white;
       padding-top: 20px;
@@ -48,6 +55,7 @@
       cursor: pointer;
       float: left;
       text-decoration: none;
+      width: 100%;
     }
 
     img {
@@ -64,18 +72,43 @@
       color: white;
       text-align: center;
     }
-  </style>
+    /* Style the navbar */
+    #navbar {
+      overflow: hidden;
+      background-color: #333;
+  
+      width: 100%;
+      
+    }
+
+    /* Navbar links */
+    #navbar a {
+      font-family: Ostrich Sans;
+      font-size: 20px;
+      background-color: #96858f;
+      color: white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-align: center;
+      cursor: pointer;
+      float: left;
+      text-decoration: none;
+      width: 25%;
+    
+    }
+</style>
+
 
   <body>
     <div class="header">
       <h2>Meglan's Movie Reviews</h2>
     </div>
 
-    <div class="button" style="width: 100%;">
-      <a href="index.html" style="width: 25%;">About Me</a>
-      <a href="movies.html" style="width: 25%;">Movie Reviews</a>
-      <a href="TV.html" style="width: 25%;">TV Reviews</a>
-      <a href="others.html" style="width: 25%;">Other Reviews</a>
+    <div id="navbar">
+        <a href="index.html" >About Me</a>
+        <a href="movies.html" >Movie Reviews</a>
+        <a href="TV.html" >TV Reviews</a>
+        <a href="others.html" >Other Reviews</a>
     </div>
 
     <div class="row">
@@ -163,7 +196,7 @@
             quite satisfied. I believe most if not all of the characters had a
             justified exit. All in all, <i>The Rise of Skywalker</i> wrapped up
             the saga,especially the trilogy, in an emotional, intense, and
-            satisfying manner. <br /><br />Meg's Rating: 9.5/10<br /><br />
+            satisfying manner. <br /><br />Meg's Rating: 8.5/10<br /><br />
           </p>
         </div>
       </div>
@@ -183,8 +216,7 @@
         </div>
         <div class="card">
           <h3>Follow Me</h3>
-          <p>Instagram: @meglanomera</p>
-        </div>
+          <p>Instagram: @meglanomera<br />Email: meglano03@gmail.com</p>        </div>
       </div>
     </div>
     <!--
